@@ -24,46 +24,46 @@
     <ClCompile Include="csgo-discord.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="achievement_manager.cpp">
+    <ClCompile Include="discord\types.cpp">
       <Filter>Source Files\Discord</Filter>
     </ClCompile>
-    <ClCompile Include="activity_manager.cpp">
+    <ClCompile Include="discord\user_manager.cpp">
       <Filter>Source Files\Discord</Filter>
     </ClCompile>
-    <ClCompile Include="application_manager.cpp">
+    <ClCompile Include="discord\voice_manager.cpp">
       <Filter>Source Files\Discord</Filter>
     </ClCompile>
-    <ClCompile Include="core.cpp">
+    <ClCompile Include="discord\achievement_manager.cpp">
       <Filter>Source Files\Discord</Filter>
     </ClCompile>
-    <ClCompile Include="image_manager.cpp">
+    <ClCompile Include="discord\activity_manager.cpp">
       <Filter>Source Files\Discord</Filter>
     </ClCompile>
-    <ClCompile Include="lobby_manager.cpp">
+    <ClCompile Include="discord\application_manager.cpp">
       <Filter>Source Files\Discord</Filter>
     </ClCompile>
-    <ClCompile Include="network_manager.cpp">
+    <ClCompile Include="discord\core.cpp">
       <Filter>Source Files\Discord</Filter>
     </ClCompile>
-    <ClCompile Include="overlay_manager.cpp">
+    <ClCompile Include="discord\image_manager.cpp">
       <Filter>Source Files\Discord</Filter>
     </ClCompile>
-    <ClCompile Include="relationship_manager.cpp">
+    <ClCompile Include="discord\lobby_manager.cpp">
       <Filter>Source Files\Discord</Filter>
     </ClCompile>
-    <ClCompile Include="storage_manager.cpp">
+    <ClCompile Include="discord\network_manager.cpp">
       <Filter>Source Files\Discord</Filter>
     </ClCompile>
-    <ClCompile Include="store_manager.cpp">
+    <ClCompile Include="discord\overlay_manager.cpp">
       <Filter>Source Files\Discord</Filter>
     </ClCompile>
-    <ClCompile Include="types.cpp">
+    <ClCompile Include="discord\relationship_manager.cpp">
       <Filter>Source Files\Discord</Filter>
     </ClCompile>
-    <ClCompile Include="user_manager.cpp">
+    <ClCompile Include="discord\storage_manager.cpp">
       <Filter>Source Files\Discord</Filter>
     </ClCompile>
-    <ClCompile Include="voice_manager.cpp">
+    <ClCompile Include="discord\store_manager.cpp">
       <Filter>Source Files\Discord</Filter>
     </ClCompile>
   </ItemGroup>
@@ -71,55 +71,55 @@
     <ClInclude Include="Memory.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="lobby_manager.h">
+    <ClInclude Include="discord\achievement_manager.h">
       <Filter>Header Files\Discord</Filter>
     </ClInclude>
-    <ClInclude Include="network_manager.h">
+    <ClInclude Include="discord\activity_manager.h">
       <Filter>Header Files\Discord</Filter>
     </ClInclude>
-    <ClInclude Include="overlay_manager.h">
+    <ClInclude Include="discord\application_manager.h">
       <Filter>Header Files\Discord</Filter>
     </ClInclude>
-    <ClInclude Include="relationship_manager.h">
+    <ClInclude Include="discord\core.h">
       <Filter>Header Files\Discord</Filter>
     </ClInclude>
-    <ClInclude Include="storage_manager.h">
+    <ClInclude Include="discord\discord.h">
       <Filter>Header Files\Discord</Filter>
     </ClInclude>
-    <ClInclude Include="store_manager.h">
+    <ClInclude Include="discord\event.h">
       <Filter>Header Files\Discord</Filter>
     </ClInclude>
-    <ClInclude Include="types.h">
+    <ClInclude Include="discord\ffi.h">
       <Filter>Header Files\Discord</Filter>
     </ClInclude>
-    <ClInclude Include="user_manager.h">
+    <ClInclude Include="discord\image_manager.h">
       <Filter>Header Files\Discord</Filter>
     </ClInclude>
-    <ClInclude Include="voice_manager.h">
+    <ClInclude Include="discord\lobby_manager.h">
       <Filter>Header Files\Discord</Filter>
     </ClInclude>
-    <ClInclude Include="achievement_manager.h">
+    <ClInclude Include="discord\network_manager.h">
       <Filter>Header Files\Discord</Filter>
     </ClInclude>
-    <ClInclude Include="activity_manager.h">
+    <ClInclude Include="discord\overlay_manager.h">
       <Filter>Header Files\Discord</Filter>
     </ClInclude>
-    <ClInclude Include="application_manager.h">
+    <ClInclude Include="discord\relationship_manager.h">
       <Filter>Header Files\Discord</Filter>
     </ClInclude>
-    <ClInclude Include="core.h">
+    <ClInclude Include="discord\storage_manager.h">
       <Filter>Header Files\Discord</Filter>
     </ClInclude>
-    <ClInclude Include="discord.h">
+    <ClInclude Include="discord\store_manager.h">
       <Filter>Header Files\Discord</Filter>
     </ClInclude>
-    <ClInclude Include="event.h">
+    <ClInclude Include="discord\types.h">
       <Filter>Header Files\Discord</Filter>
     </ClInclude>
-    <ClInclude Include="ffi.h">
+    <ClInclude Include="discord\user_manager.h">
       <Filter>Header Files\Discord</Filter>
     </ClInclude>
-    <ClInclude Include="image_manager.h">
+    <ClInclude Include="discord\voice_manager.h">
       <Filter>Header Files\Discord</Filter>
     </ClInclude>
   </ItemGroup>

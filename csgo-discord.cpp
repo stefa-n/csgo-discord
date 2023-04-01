@@ -1,5 +1,5 @@
 #include "Memory.h"
-#include "discord.h"
+#include "discord/discord.h"
 #include <iostream>
 #include <thread>
 
