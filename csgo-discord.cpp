@@ -1,4 +1,5 @@
 #include "Memory.h"
+#include "discord.h"
 #include <iostream>
 #include <thread>
 
@@ -9,6 +10,11 @@ namespace offsets {
 
 int main()
 {
+    discord::Core* core{};
+    auto res = discord::Core::Create(1091068583351681056, DiscordCreateFlags_Default, &core);
+    discord::Activity activity{};
+    activity.GetAssets().SetLargeImage("csgo");
+
     const auto mem = Memory("csgo.exe");
     const auto client = mem.GetModuleAddress("engine.dll");
     if (!client)
@@ -21,6 +27,7 @@ int main()
     std::cout << "dwClientState -> " << "0x" << std::hex << dwClientState << std::dec << std::endl;
 
     std::string mapName;
+    std::string o_mapName;
 
     while (true)
     {
@@ -38,12 +45,24 @@ int main()
         }
         if (mapName == "")
         {
-            std::cout << "Not in a match." << std::endl;
+            activity.SetState("In main menu");
+            activity.SetDetails("");
         }
         else
         {
-            std::cout << mapName << std::endl;
+            activity.SetState(mapName.c_str());
+            activity.SetDetails("In a match");
         }
+
+        if (mapName != o_mapName)
+        {
+            std::cout << mapName << " " << o_mapName << std::endl;
+            activity.GetTimestamps().SetStart(std::time(0));
+            o_mapName = mapName;
+        }
+
+        core->ActivityManager().UpdateActivity(activity, [](discord::Result result) {});
+        core->RunCallbacks();
     }
 };
 
