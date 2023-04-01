@@ -26,8 +26,8 @@ int main()
     {
         std::this_thread::sleep_for(std::chrono::milliseconds(1000));
         mapName.clear();
-        const auto dwClientState_Map = mem.Read<std::uintptr_t>(client + offsets::dwClientState_Map);
-        for (int i = 0; i < 64; i++)
+        const auto dwClientState_Map = mem.Read<std::uintptr_t>(dwClientState + offsets::dwClientState_Map);
+        for (int i = 0; i < 128; i++)
         {
             const char c = mem.Read<char>(dwClientState + offsets::dwClientState_Map + i);
             if (c == '\0')
@@ -36,7 +36,14 @@ int main()
             }
             mapName += c;
         }
-        std::cout << mapName<< std::endl;
+        if (mapName == "")
+        {
+            std::cout << "Not in a match." << std::endl;
+        }
+        else
+        {
+            std::cout << mapName << std::endl;
+        }
     }
 };
 
